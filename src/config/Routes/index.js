@@ -1,6 +1,6 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import { Login, Register, Home } from '../../pages';
+import React from 'react';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { Login, MainApp, Register } from '../../pages';
 
 const Routes = () => {
     return (
@@ -13,7 +13,7 @@ const Routes = () => {
                     <Register />
                 </Route>
                 <Route path="/">
-                    <Home />
+                    <MainApp />
                 </Route>
             </Switch>
         </BrowserRouter>
